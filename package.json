@@ -1,17 +1,20 @@
 {
   "name": "node-marketplace-api",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "REST API for marketplace inventory management using Node.js, Express, and MongoDB.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "test": "node --test"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.2",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
     "mongoose": "^8.8.4"
   },
   "devDependencies": {
